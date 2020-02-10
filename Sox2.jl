@@ -28,7 +28,7 @@ println("entropy Sox2 e7 is ", ent_s_e7) #print entropy
 
 # display histogram 
 using Plots
-display(histogram(s_e6)) #plot hisogram of data 
-display(histogram(s_e65)) #plot hisogram of data 
-display(histogram(s_e7)) #plot hisogram of data 
+display(histogram(s_e6, xlabel="Expression", ylabel="Frequency", title="Sox2 E6", color=:lightblue)) #plot hisogram of data 
+display(histogram(s_e65, xlabel="Expression", ylabel="Frequency", title="Sox2 E6.5", color=:lightblue)) #plot hisogram of data 
+display(histogram(s_e7, xlabel="Expression", ylabel="Frequency", title="Sox2 E7", color=:lightblue)) #plot hisogram of data 
 # display(histogram(s_e75)) #plot hisogram of data 
