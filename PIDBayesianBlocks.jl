@@ -1,9 +1,9 @@
 #Calculate and plot PID for Sox2 as the target
 #calculate PID and convert from dictionary
-spide6 = collect(get_partial_information_decomposition(n_e6, t_e6, s_e6))
-spide65 = collect(get_partial_information_decomposition(n_e65, t_e65, s_e65))
-spide7 = collect(get_partial_information_decomposition(n_e7, t_e7, s_e7))
-spide75 = collect(get_partial_information_decomposition(n_e75, t_e75, s_e75))
+spide6 = collect(get_partial_information_decomposition(n_e6, t_e6, s_e6, mode = "bayesian_blocks"))
+spide65 = collect(get_partial_information_decomposition(n_e65, t_e65, s_e65, mode = "bayesian_blocks"))
+spide7 = collect(get_partial_information_decomposition(n_e7, t_e7, s_e7, mode = "bayesian_blocks"))
+spide75 = collect(get_partial_information_decomposition(n_e75, t_e75, s_e75, mode = "bayesian_blocks"))
 
 #convert to array of only the second value i.e. only the numbers (v)
 spide6 = [(v) for (k,v) in spide6]
@@ -22,10 +22,10 @@ display(plot(["E6", "E6.5", "E7", "E7.5" ], [sredundancy, sunique_1, ssynergy, s
 
 #Calculate and plot PID for Nanog as the target
 #calculate PID and convert from dictionary
-npide6 = collect(get_partial_information_decomposition(s_e6, t_e6, n_e6))
-npide65 = collect(get_partial_information_decomposition(s_e65, t_e65, n_e65))
-npide7 = collect(get_partial_information_decomposition(s_e7, t_e7, n_e7))
-npide75 = collect(get_partial_information_decomposition(s_e75, t_e75, n_e75))
+npide6 = collect(get_partial_information_decomposition(s_e6, t_e6, n_e6, mode = "bayesian_blocks"))
+npide65 = collect(get_partial_information_decomposition(s_e65, t_e65, n_e65, mode = "bayesian_blocks"))
+npide7 = collect(get_partial_information_decomposition(s_e7, t_e7, n_e7, mode = "bayesian_blocks"))
+npide75 = collect(get_partial_information_decomposition(s_e75, t_e75, n_e75, mode = "bayesian_blocks"))
 
 #convert to array of only the second value i.e. only the numbers (v)
 npide6 = [(v) for (k,v) in npide6]
@@ -44,10 +44,10 @@ display(plot(["E6", "E6.5", "E7", "E7.5" ], [nredundancy, nunique_1, nsynergy, n
 
 #Calculate and plot PID for T as the target
 #calculate PID and convert from dictionary
-tpide6 = collect(get_partial_information_decomposition(n_e6, s_e6, t_e6))
-tpide65 = collect(get_partial_information_decomposition(n_e65, s_e65, t_e65))
-tpide7 = collect(get_partial_information_decomposition(n_e7, s_e7, t_e7))
-tpide75 = collect(get_partial_information_decomposition(n_e75, s_e75, t_e75))
+tpide6 = collect(get_partial_information_decomposition(n_e6, s_e6, t_e6, mode = "bayesian_blocks"))
+tpide65 = collect(get_partial_information_decomposition(n_e65, s_e65, t_e65, mode = "bayesian_blocks"))
+tpide7 = collect(get_partial_information_decomposition(n_e7, s_e7, t_e7, mode = "bayesian_blocks"))
+tpide75 = collect(get_partial_information_decomposition(n_e75, s_e75, t_e75, mode = "bayesian_blocks"))
 
 #convert to array of only the second value i.e. only the numbers (v)
 tpide6 = [(v) for (k,v) in tpide6]
