@@ -1,6 +1,5 @@
 # read the data from file
 using ExcelReaders
-s_e55_file = readxl("C:\\Users\\Carol Clark\\OneDrive\\Dissertation\\Data\\test.xlsx", "Sox2!A2:A5") #read data from file
 s_e6_file = readxl("C:\\Users\\Carol Clark\\OneDrive\\Dissertation\\Data\\test.xlsx", "Sox2!B2:B9") #read data from file
 s_e65_file = readxl("C:\\Users\\Carol Clark\\OneDrive\\Dissertation\\Data\\test.xlsx", "Sox2!C2:C15") #read data from file
 s_e7_file = readxl("C:\\Users\\Carol Clark\\OneDrive\\Dissertation\\Data\\test.xlsx", "Sox2!D2:D43") #read data from file

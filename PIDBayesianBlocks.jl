@@ -13,11 +13,11 @@ spide75 = [(v) for (k,v) in spide75]
 
 
 sredundancy = [spide6[1], spide65[1], spide7[1], spide75[1]]
-sunique_1 = [spide6[2], spide65[2], spide7[2], spide75[2]]
+sunique_2 = [spide6[2], spide65[2], spide7[2], spide75[2]]
 ssynergy = [spide6[3], spide65[3], spide7[3], spide75[3]]
-sunique_2 = [spide6[4], spide65[4], spide7[4], spide75[4]]
+sunique_1 = [spide6[4], spide65[4], spide7[4], spide75[4]]
 
-display(plot(["E6", "E6.5", "E7", "E7.5" ], [sredundancy, sunique_1, ssynergy, sunique_2], xlabel = "TimePoint", label = ["Redundancy" "Unique 1" "Synergy" "Unique 2"], title = "Sox2 as target, mode=bayesian_blocks"))
+display(plot(["E6", "E6.5", "E7", "E7.5" ], [sredundancy, sunique_2, ssynergy, sunique_1], xlabel = "TimePoint", label = ["Redundancy" "Unique 2" "Synergy" "Unique 1"], title = "Sox2 as target, mode=bayesian_blocks"))
 
 
 #Calculate and plot PID for Nanog as the target
@@ -39,7 +39,7 @@ nunique_1 = [npide6[2], npide65[2], npide7[2], npide75[2]]
 nsynergy = [npide6[3], npide65[3], npide7[3], npide75[3]]
 nunique_2 = [npide6[4], npide65[4], npide7[4], npide75[4]]
 
-display(plot(["E6", "E6.5", "E7", "E7.5" ], [nredundancy, nunique_1, nsynergy, nunique_2], xlabel = "TimePoint", label = ["Redundancy" "Unique 1" "Synergy" "Unique 2"], title = "Nanog as target, mode=bayesian_blocks"))
+display(plot(["E6", "E6.5", "E7", "E7.5" ], [nredundancy, nunique_2, nsynergy, nunique_1], xlabel = "TimePoint", label = ["Redundancy" "Unique 2" "Synergy" "Unique 1"], title = "Nanog as target, mode=bayesian_blocks"))
 
 
 #Calculate and plot PID for T as the target
@@ -57,8 +57,8 @@ tpide75 = [(v) for (k,v) in tpide75]
 
 
 tredundancy = [tpide6[1], tpide65[1], tpide7[1], tpide75[1]]
-tunique_1 = [tpide6[2], tpide65[2], tpide7[2], tpide75[2]]
+tunique_2 = [tpide6[2], tpide65[2], tpide7[2], tpide75[2]]
 tsynergy = [tpide6[3], tpide65[3], tpide7[3], tpide75[3]]
-tunique_2 = [tpide6[4], tpide65[4], tpide7[4], tpide75[4]]
+tunique_1 = [tpide6[4], tpide65[4], tpide7[4], tpide75[4]]
 
-display(plot(["E6", "E6.5", "E7", "E7.5" ], [tredundancy, tunique_1, tsynergy, tunique_2], xlabel = "TimePoint", label = ["Redundancy" "Unique 1" "Synergy" "Unique 2"], title = "T as target, mode=bayesian_blocks"))
+display(plot(["E6", "E6.5", "E7", "E7.5" ], [tredundancy, tunique_2, tsynergy, tunique_1], xlabel = "TimePoint", label = ["Redundancy" "Unique 2" "Synergy" "Unique 1"], title = "T as target, mode=bayesian_blocks"))
