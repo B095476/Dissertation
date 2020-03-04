@@ -1,15 +1,10 @@
 using Discretizers
-macro Name(arg)
-    x = string(arg)
-    quote
-        $x
-    end
-end
 
-function histogrambayesianblocks(values_x)
+function histogrambayesianblocks(values_x, titlex)
     frequency = discretize_values(values_x, mode = "bayesian_blocks")
     edges = binedges(DiscretizeBayesianBlocks(), values_x)
-    println(@Name(values_x))
-    a = @Name(values_x)
-    bar(edges, frequency, title = a)
+    println(edges)
+    println(frequency)
+    plot(edges[1:end-1], frequency, linetype=:steppost, color = :purple, title = titlex)
+    plot!(edges[2:end], frequency, linetype=:steppre, color = :purple, legend = false, xaxis = "Expression", yaxis = "Frequency")
 end 
