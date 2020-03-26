@@ -27,11 +27,11 @@ println("entropy nanog e7.5 is ", ent_n_e75) #print entropy
 
 # display histogram 
 using Plots
-display(histogram(n_e6, xlabel="Expression", ylabel="Frequency", title="Nanog E6", color=:purple)) #plot hisogram of data
+display(histogram(n_e6, xlabel="Expression", ylabel="Frequency", title="Nanog E6", color=:purple, legend = false)) #plot hisogram of data
 # savefig("Nanog E6.png") 
-display(histogram(n_e65, xlabel="Expression", ylabel="Frequency", title="Nanog E6.5", color=:purple)) #plot hisogram of data 
+display(histogram(n_e65, xlabel="Expression", ylabel="Frequency", title="Nanog E6.5", color=:purple, legend = false)) #plot hisogram of data 
 # savefig("Nanog E6.5.png") 
-display(histogram(n_e7, xlabel="Expression", ylabel="Frequency", title="Nanog E7", color=:purple)) #plot hisogram of data 
+display(histogram(n_e7, xlabel="Expression", ylabel="Frequency", title="Nanog E7", color=:purple, legend = false)) #plot hisogram of data 
 # savefig("Nanog E7.png") 
-display(histogram(n_e75, xlabel="Expression", ylabel="Frequency", title="Nanog E7.5", color=:purple)) #plot hisogram of data 
+display(histogram(n_e75, xlabel="Expression", ylabel="Frequency", title="Nanog E7.5", color=:purple, legend = false)) #plot hisogram of data 
 # savefig("Nanog E7.5.png") 

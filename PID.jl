@@ -17,7 +17,7 @@ sunique_2 = [spide6[2], spide65[2], spide7[2], spide75[2]]
 ssynergy = [spide6[3], spide65[3], spide7[3], spide75[3]]
 sunique_1 = [spide6[4], spide65[4], spide7[4], spide75[4]]
 
-display(plot(["E6", "E6.5", "E7", "E7.5" ], [sredundancy, sunique_2, ssynergy, sunique_1], xlabel = "TimePoint", label = ["Redundancy" "Unique 2 (T+Sox2)" "Synergy" "Unique 1 (Nanog+Sox2)"], title = "Sox2 as target"))
+display(plot(["E6", "E6.5", "E7", "E7.5" ], [sredundancy, sunique_2, ssynergy, sunique_1], xlabel = "TimePoint", label = ["Redundancy" "Unique for T + Sox2" "Synergy" "Unique for Nanog + Sox2"], title = "Sox2 as target"))
 
 
 #Calculate and plot PID for Nanog as the target
@@ -39,7 +39,7 @@ nunique_2 = [npide6[2], npide65[2], npide7[2], npide75[2]]
 nsynergy = [npide6[3], npide65[3], npide7[3], npide75[3]]
 nunique_1 = [npide6[4], npide65[4], npide7[4], npide75[4]]
 
-display(plot(["E6", "E6.5", "E7", "E7.5" ], [nredundancy, nunique_2, nsynergy, nunique_1], xlabel = "TimePoint", label = ["Redundancy" "Unique 2 (T+Nanog)" "Synergy" "Unique 1 (Sox2+Nanog)" ], title = "Nanog as target"))
+display(plot(["E6", "E6.5", "E7", "E7.5" ], [nredundancy, nunique_2, nsynergy, nunique_1], xlabel = "TimePoint", label = ["Redundancy" "Unique for T + Nanog" "Synergy" "Unique for Sox2 + Nanog" ], title = "Nanog as target"))
 
 
 #Calculate and plot PID for T as the target
@@ -62,4 +62,4 @@ tsynergy = [tpide6[3], tpide65[3], tpide7[3], tpide75[3]]
 tunique_1 = [tpide6[4], tpide65[4], tpide7[4], tpide75[4]]
 
 # Display plot of PID at different time points 
-display(plot(["E6", "E6.5", "E7", "E7.5" ], [tredundancy, tunique_2, tsynergy, tunique_1], xlabel = "TimePoint", label = ["Redundancy" "Unique 2 (Sox2+T)" "Synergy" "Unique 1 (Nanog+T)"], title = "T as target"))
+display(plot(["E6", "E6.5", "E7", "E7.5" ], [tredundancy, tunique_2, tsynergy, tunique_1], xlabel = "TimePoint", label = ["Redundancy" "Unique for Sox2 + T" "Synergy" "Unique for Nanog + T"], title = "T as target"))

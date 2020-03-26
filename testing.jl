@@ -6,4 +6,3 @@ using Plots
 display(histogram(test_nanog_e7))
 
 # code to prove data is read in correctly by manually inputting it
-

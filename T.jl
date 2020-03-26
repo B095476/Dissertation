@@ -27,7 +27,7 @@ println("entropy T e7.5 is ", ent_t_e75) #print entropy
 
 # display histogram 
 using Plots
-display(histogram(t_e6, xlabel="Expression", ylabel="Frequency", title="T E6", color=:yellow)) #plot hisogram of data 
-display(histogram(t_e65, xlabel="Expression", ylabel="Frequency", title="T E6.5", color=:yellow)) #plot hisogram of data 
-display(histogram(t_e7, xlabel="Expression", ylabel="Frequency", title="T E7", color=:yellow)) #plot hisogram of data 
-display(histogram(t_e75, xlabel="Expression", ylabel="Frequency", title="T E7.5", color=:yellow)) #plot hisogram of data 
+display(histogram(t_e6, xlabel="Expression", ylabel="Frequency", title="T E6", color=:yellow, legend = false)) #plot hisogram of data 
+display(histogram(t_e65, xlabel="Expression", ylabel="Frequency", title="T E6.5", color=:yellow, legend = false)) #plot hisogram of data 
+display(histogram(t_e7, xlabel="Expression", ylabel="Frequency", title="T E7", color=:yellow, legend = false)) #plot hisogram of data 
+display(histogram(t_e75, xlabel="Expression", ylabel="Frequency", title="T E7.5", color=:yellow, legend = false)) #plot hisogram of data 
